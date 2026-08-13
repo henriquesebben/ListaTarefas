@@ -5,11 +5,11 @@ import lombok.*;
 import java.time.LocalDateTime;
 
 
-@Table(name = "tarefas")
-@Entity
-@AllArgsConstructor
-@NoArgsConstructor
-@Data
+@Table(name = "tarefas") //nome da tabela
+@Entity //Diz ao JPA: "essa classe é uma tabela no banco"
+@AllArgsConstructor //construtor com todos os campos
+@NoArgsConstructor //construtor vazio
+@Data //Lombok gera getters, setters, toString, equals, hashCode
 
 public class modelTarefas {
     @Id
