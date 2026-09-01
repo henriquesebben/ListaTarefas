@@ -11,8 +11,8 @@ public class tarefaDTOResponse {
 
     // Todos os campos que a API DEVOLVE para o cliente
     private Long id;
-    private String Titulo;
-    private Boolean Completa;
+    private String titulo;
+    private Boolean completa;
     private Priority prioridade;
     private LocalDateTime dataCriacao;
 
@@ -20,8 +20,8 @@ public class tarefaDTOResponse {
     //pega tudo do model e transfere para aqui no DTO
     public tarefaDTOResponse(modelTarefas tarefa) {
         this.id = tarefa.getId();
-        this.Titulo = tarefa.getTitulo();
-        this.Completa = tarefa.getCompleta();
+        this.titulo = tarefa.getTitulo();
+        this.completa = tarefa.getCompleta();
         this.prioridade = tarefa.getPrioridade();
         this.dataCriacao = tarefa.getDataCriacao();
 
