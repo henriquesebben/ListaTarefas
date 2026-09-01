@@ -11,6 +11,8 @@ public class tarefaDTORequest {
     @Size(min = 3, max = 100, message = "Título deve ter entre 3 e 100 caracteres") //tamanho da mensagem
     private String titulo;
 
+    @Size(max = 500, min = 0, message = "Descreva sua tarefa, max de 500 caracteres")
+    private String descricao;
 
     // @NotNull → não pode ser nulo (diferente de @NotBlank,que é só para Strings)
     // Usado aqui porque Priority é um enum, não uma String

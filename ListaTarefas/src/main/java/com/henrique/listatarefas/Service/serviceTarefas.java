@@ -41,6 +41,7 @@ public class serviceTarefas {
         tarefa.setTitulo(dto.getTitulo());
         tarefa.setPrioridade(dto.getPrioridade());
         tarefa.setCompleta(false);
+        tarefa.setDescricao(dto.getDescricao());
 
         modelTarefas salvo = repository.save(tarefa);
         return new tarefaDTOResponse(salvo);
@@ -53,6 +54,7 @@ public class serviceTarefas {
 
         tarefa.setTitulo(dto.getTitulo());
         tarefa.setPrioridade(dto.getPrioridade());
+        tarefa.setDescricao(dto.getDescricao());
 
         modelTarefas atualizado = repository.save(tarefa);
         return new tarefaDTOResponse(atualizado);

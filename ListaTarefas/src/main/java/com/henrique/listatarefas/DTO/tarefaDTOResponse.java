@@ -15,6 +15,7 @@ public class tarefaDTOResponse {
     private Boolean completa;
     private Priority prioridade;
     private LocalDateTime dataCriacao;
+    private String descricao;
 
 
     //pega tudo do model e transfere para aqui no DTO
@@ -24,5 +25,5 @@ public class tarefaDTOResponse {
         this.completa = tarefa.getCompleta();
         this.prioridade = tarefa.getPrioridade();
         this.dataCriacao = tarefa.getDataCriacao();
-
+        this.descricao = tarefa.getDescricao();
     } }
